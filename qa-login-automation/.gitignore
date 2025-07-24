@@ -1,9 +1,12 @@
-
----
-
-### 🧩 .gitignore (opcional)
-```txt
+# 🔁 Cache de Python
 __pycache__/
 *.pyc
-report.html
+
+# 🔐 Entorno virtual y variables
 .env
+venv/
+
+# 🧩 Archivos de init 
+**/__init__.py
+
+
