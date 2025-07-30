@@ -1,31 +1,37 @@
 # 🔐 Proyecto QA Automatizado - Login Test
 
-Este proyecto realiza pruebas automatizadas sobre el formulario de login del sitio [The Internet](https://the-internet.herokuapp.com/login) utilizando **Python**, **Selenium** y **Pytest**, generando reportes visuales en HTML.
+Este repositorio contiene dos enfoques de automatización de pruebas sobre formularios de login y funcionalidades relacionadas, utilizando:
+
+- 🐍 Python + Selenium + Pytest (`/selenium-py`)
+- 🌐 JavaScript + Cypress (`/cypress-js`)
 
 ---
 
 ## 🧪 Pruebas implementadas
 
-- ✅ Login con credenciales válidas.
-- ❌ Login con credenciales inválidas.
-- (Y se puede extender fácilmente con más casos.)
+- ✅ Login con credenciales válidas
+- ❌ Login con credenciales inválidas
+- ⚠️ Login con campos vacíos
+- 🚫 Usuario bloqueado
+- 📦 Acceso al inventario tras login
+- 🛒 Agregado y eliminación de productos del carrito
+- 🔍 Filtros de productos
+- 💳 Flujo de compra completo (checkout)
 
 ---
 
 ## ⚙️ Tecnologías utilizadas
 
+### 📂 `/selenium-py` (Python)
 - Python 3.13
 - Selenium 4
 - Pytest
 - Pytest-HTML
 - WebDriver de Chrome
 
----
-
-## 🚀 Cómo ejecutar el proyecto
-
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/qa-login-automation.git
-   cd qa-login-automation
-
+### 📂 `/cypress-js` (JavaScript)
+- Node.js
+- Cypress 13+
+- Cypress Test Runner
+- Comandos personalizados (`commands.js`)
+- Estructura modular de pruebas (`.cy.js`)
